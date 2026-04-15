@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>[Business Name]</title>
+
+<style>
+/* =========================
+   Base
+========================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background: #ffffff;
+    color: #1f2937;
+    line-height: 1.6;
+}
+
+a { text-decoration: none; color: inherit; }
+
+section {
+    max-width: 1100px;
+    margin: auto;
+    padding: 70px 20px;
+}
+
+.section-title {
+    font-size: 26px;
+    margin-bottom: 20px;
+    letter-spacing: 0.2px;
+}
+
+/* =========================
+   Nav
+========================= */
+header {
+    position: sticky;
+    top: 0;
+    background: white;
+    border-bottom: 1px solid #e5e7eb;
+    z-index: 1000;
+}
+
+.nav {
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 20px;
+}
+
+.logo {
+    font-weight: 700;
+    font-size: 18px;
+}
+
+nav a {
+    margin-left: 18px;
+    font-size: 14px;
+    color: #4b5563;
+    transition: 0.2s;
+}
+
+nav a:hover {
+    color: #000;
+}
+
+/* =========================
+   Hero
+========================= */
+.hero {
+    background: #f9fafb;
+    text-align: center;
+    padding: 90px 20px;
+}
+
+.hero h1 {
+    font-size: 44px;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    max-width: 650px;
+    margin: auto;
+    color: #6b7280;
+    font-size: 16px;
+}
+
+/* =========================
+   Cards
+========================= */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 18px;
+}
+
+.card {
+    border: 1px solid #e5e7eb;
+    padding: 18px;
+    border-radius: 12px;
+    background: #fff;
+    transition: 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+}
+
+.card h3 {
+    font-size: 16px;
+    margin-bottom: 8px;
+}
+
+.card p {
+    font-size: 14px;
+    color: #6b7280;
+}
+
+/* =========================
+   About / Content Blocks
+========================= */
+.text-block {
+    max-width: 850px;
+    color: #4b5563;
+}
+
+/* =========================
+   Contact
+========================= */
+.contact {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.box {
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    padding: 18px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 12px;
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+}
+
+textarea {
+    min-height: 110px;
+    resize: vertical;
+}
+
+/* =========================
+   Footer
+========================= */
+footer {
+    text-align: center;
+    padding: 30px;
+    border-top: 1px solid #e5e7eb;
+    font-size: 13px;
+    color: #6b7280;
+}
+
+/* =========================
+   Responsive
+========================= */
+@media (max-width: 768px) {
+    .hero h1 { font-size: 34px; }
+    .contact { grid-template-columns: 1fr; }
+    nav { display: none; }
+}
+</style>
+</head>
+
+<body>
+
+<!-- NAV -->
+<header>
+    <div class="nav">
+        <div class="logo">[Business Name]</div>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#services">Services</a>
+            <a href="#products">Products</a>
+            <a href="#about">About</a>
+            <a href="#pricing">Pricing</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </div>
+</header>
+
+<!-- HERO -->
+<section class="hero" id="home">
+    <h1>[Business Name]</h1>
+    <p>
+        A professional overview of [Business Name], providing high-quality services and solutions in
+        [industry placeholder]. Built on reliability, consistency, and long-term client relationships.
+    </p>
+</section>
+
+<!-- SERVICES -->
+<section id="services">
+    <h2 class="section-title">Services</h2>
+
+    <div class="grid">
+        <div class="card">
+            <h3>[Service 1]</h3>
+            <p>[Short description of service offering and value provided.]</p>
+        </div>
+        <div class="card">
+            <h3>[Service 2]</h3>
+            <p>[Short description of service offering and value provided.]</p>
+        </div>
+        <div class="card">
+            <h3>[Service 3]</h3>
+            <p>[Short description of service offering and value provided.]</p>
+        </div>
+        <div class="card">
+            <h3>[Service 4]</h3>
+            <p>[Short description of service offering and value provided.]</p>
+        </div>
+    </div>
+</section>
+
+<!-- PRODUCTS / OFFERINGS -->
+<section id="products">
+    <h2 class="section-title">Products / Offerings</h2>
+
+    <div class="grid">
+        <div class="card">
+            <h3>[Product / Offering A]</h3>
+            <p>[Description of what this product or solution includes.]</p>
+        </div>
+        <div class="card">
+            <h3>[Product / Offering B]</h3>
+            <p>[Description of what this product or solution includes.]</p>
+        </div>
+        <div class="card">
+            <h3>[Product / Offering C]</h3>
+            <p>[Description of what this product or solution includes.]</p>
+        </div>
+    </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+    <h2 class="section-title">About Us</h2>
+
+    <div class="text-block">
+        <p>
+            [Business Name] is a locally focused business committed to delivering dependable service
+            and long-term value to clients. Our team emphasizes professionalism, clear communication,
+            and consistent quality across every project we take on.
+            <br><br>
+            Founded in [Year], we continue to build trust through transparent practices and
+            a strong focus on customer satisfaction.
+        </p>
+    </div>
+</section>
+
+<!-- PRICING -->
+<section id="pricing">
+    <h2 class="section-title">Pricing</h2>
+
+    <div class="grid">
+        <div class="card">
+            <h3>Basic</h3>
+            <p>[Entry-level service description]</p>
+            <p><strong>[Price Placeholder]</strong></p>
+        </div>
+
+        <div class="card">
+            <h3>Standard</h3>
+            <p>[Mid-tier service description]</p>
+            <p><strong>[Price Placeholder]</strong></p>
+        </div>
+
+        <div class="card">
+            <h3>Premium</h3>
+            <p>[Full-service / advanced offering]</p>
+            <p><strong>[Price Placeholder]</strong></p>
+        </div>
+    </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+    <h2 class="section-title">Contact</h2>
+
+    <div class="contact">
+        <div class="box">
+            <h3>Contact Information</h3>
+            <p><strong>Phone:</strong> [Phone Number]</p>
+            <p><strong>Email:</strong> [Email Address]</p>
+            <p><strong>Address:</strong> [Business Address]</p>
+            <p><strong>Hours:</strong> [Business Hours]</p>
+        </div>
+
+        <div class="box">
+            <h3>Send a Message</h3>
+            <input type="text" placeholder="Your Name">
+            <input type="email" placeholder="Your Email">
+            <textarea placeholder="Your Message"></textarea>
+        </div>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    © [Year] [Business Name]. All rights reserved.
+</footer>
+
+</body>
+</html>
